@@ -1,0 +1,121 @@
+.App {
+  padding: 5vw;
+  text-align: center;
+  background: hsl(0,0%, 85%);
+  height: 100vh;
+}
+
+.IIONS_button {
+  height: 50px;
+  width: 200px;
+
+  margin: 5px 15px;
+  color: white;
+  background-color: rgb(5,72,107);
+  border: none;
+  padding: .5rem 1rem ;
+}
+.shadowTransition {
+  box-shadow: -5px 5px 2px 0px rgba(0,0,0,0.9);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.Buttons button:hover {
+  background-color: rgb(15, 105, 153);
+  box-shadow: -2.5px 2.5px 2px 0px rgba(0,0,0,0.9);
+}
+
+.results {
+  margin-top: 50px;
+ 
+}
+
+
+
+
+.CollapsibleMenu {
+  width: 55vw;
+  margin: auto;
+}
+
+.CollapsibleCard {
+  padding: 0px 30px;
+  
+  transition: padding .2s ease-in-out;
+}
+
+.CollapsibleCard:hover {
+  padding: 10px 0px;
+}
+
+.CollapsibleCard:hover button {
+  box-shadow: 5px 0px 10px rgba(0,0,0,0.6);
+  background-color: rgb(4, 29, 43);
+}
+
+.CollapsibleMenu button {
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+  border-bottom : 2px solid grey;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  z-index: 2;
+
+  transition: box-shadow .2s ease-in-out;
+  transition: background-color .1s ease-in-out;
+}
+
+/* .CollapsibleMenu button {
+  text-align: left;
+  margin: 0;
+  width: 55vw;
+  border-bottom: 3px solid grey;
+
+  transition: width .2s ease-in-out;
+  transition: height .2s ease-in-out;
+  transition: margin .2s ease-in-out;
+  transition: box-shadow .2s ease-in-out;
+}
+
+.CollapsibleMenu .buttonDiv:hover button{
+  height: 60px;
+  width: 60vw;
+  margin: 10px 0;
+  box-shadow: 5px 5px 5px rgba(155, 127, 127, 0.5);
+} */
+
+.CollapsibleContent {
+  text-align: center;
+
+  z-index: 3;
+}
+
+.CollapsibleContent form {
+  display: none
+}
+
+
+@keyframes showCollapsibleContent {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 300px;
+  }
+}
+@keyframes hideCollapsibleContent {
+  from {
+    height: 300px;
+  }
+  to {
+    height: 0px;
+  }
+}
+
+.cols {
+  display: flex;
+}
+
+.col {
+  width: 50%
+}
